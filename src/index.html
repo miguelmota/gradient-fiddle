@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>Gradient Fiddle</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Gradient Fiddle</h1>
+    <section class="bars-section">
+        <div class="bar-group">
+            <label class="bar-label">R</label>
+            <div class="bar-container">
+              <div class="bar bar-r"></div>
+            </div>
+        </div>
+        <div class="bar-group">
+            <label class="bar-label">G</label>
+            <div class="bar-container">
+              <div class="bar bar-g"></div>
+            </div>
+        </div>
+        <div class="bar-group">
+            <label class="bar-label">B</label>
+            <div class="bar-container">
+              <div class="bar bar-b"></div>
+            </div>
+        </div>
+        <div class="bar-group">
+            <label class="bar-label">RGB</label>
+            <div class="bar-container">
+              <div class="bar bar-rgb"></div>
+            </div>
+        </div>
+        <div class="bar-group">
+            <label class="bar-label">Steps</label>
+            <div class="bar-container">
+              1<input type="range" min="1" max="150" value="25" step="1" class="range range-step"/>150
+            </div>
+        </div>
+        <div class="bar-group">
+          <label class="bar-label">Examples</label>
+          <div class="bar-container">
+            <a class="example-link" data-example="rainbow" href>rainbow</a>
+            <a class="example-link" data-example="pastel" href>pastel</a>
+            <a class="example-link" data-example="grayscale" href>grayscale</a>
+            <a class="example-link" data-example="black2blue" href>black2blue</a>
+            <a class="example-link" data-example="white2blue" href>white2blue</a>
+          </div>
+        </div>
+    </section>
+
+     <pre class="pre output-step">var steps = 25;</pre>
+     <pre class="pre">var colors = [];</pre>
+     <div id="editor"></div>
+   </div>
+   <button class="button button-run">Run</button>
+
+   <footer class="footer">
+     <p><a href="http://krazydad.com/tutorials/makecolors.php" target="_blank">credits to this article</a></p>
+  </footer>
+   <div>
+
+     <a href="https://github.com/miguelmota/gradient-fiddle" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+     <script src="scripts/vendor/ace.js"></script>
+     <script src="scripts/main.js"></script>
+   </main>
+ </body>
+</html>
+
