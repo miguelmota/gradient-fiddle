@@ -61,8 +61,8 @@ function update(event) {
 var examples = {
   rainbow: function() {
 var frequency = (Math.PI * 2) / steps;
-var amplitude = 128;
-var center = 127;
+var amplitude = 127;
+var center = 128;
 var slice = (Math.PI * 2) / 3;
 
 for (var i = 0; i < steps; i++) {
@@ -72,14 +72,15 @@ for (var i = 0; i < steps; i++) {
 
   colors.push([r, g, b]);
 }
-  },
+},
   grayscale: function() {
-var frequency = (Math.PI * 2) / steps;
-var amplitude = 128;
-var center = 127;
+var frequency = Math.PI / steps;
+var amplitude = 127;
+var center = 128;
+var slice = Math.PI * 2 / 4;
 
 for (var i = 0; i < steps; i++) {
-  var v = Math.sin((frequency * i)) * amplitude + center;
+  var v = Math.sin((frequency * i) + slice) * amplitude + center;
 
   colors.push([v, v, v]);
 }
@@ -100,8 +101,8 @@ for (var i = 0; i < steps; i++) {
 },
 black2blue: function() {
 var frequency = Math.PI / steps;
-var amplitude = 128;
-var center = 127;
+var amplitude = 127;
+var center = 128;
 var slice = (Math.PI * 2) / 3;
 
 for (var i = 0; i < steps; i++) {
@@ -114,8 +115,8 @@ for (var i = 0; i < steps; i++) {
 },
 white2blue: function() {
 var frequency = Math.PI / steps;
-var amplitude = 128;
-var center = 127;
+var amplitude = 127;
+var center = 128;
 var slice = Math.PI / 2;
 
 for (var i = 0; i < steps; i++) {
