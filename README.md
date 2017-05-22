@@ -4,7 +4,7 @@
 
 # Demo
 
-[http://lab.moogs.io/gradient-fiddle](http://lab.moogs.io/gradient-fiddle)
+[https://lab.miguelmota.com/gradient-fiddle](https://lab.miguelmota.com/gradient-fiddle)
 
 # License
 
