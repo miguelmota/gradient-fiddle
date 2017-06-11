@@ -2,7 +2,7 @@
 
 > Fiddle with sine waves for making gradients in JavaScript.
 
-<img src="https://raw.githubusercontent.com/miguelmota/gradient-fiddle/master/screenshot.gif" width="400" />
+<img src="https://raw.githubusercontent.com/miguelmota/gradient-fiddle/master/screenshot.gif" width="600" />
 
 # Demo
 
